@@ -5,4 +5,5 @@ stage ('SCM checkout'){
 stage ('compile package'){
   sh.'mvn package'
   }
+  tool name: 'maven-1', type: 'maven'
 }

@@ -1,4 +1,8 @@
-node 
-stage () {
-
+node {
+stage ('SCM checkout'){
+  git 'https://github.com/iskandarsaleh/javahello/edit/master/jenkinsfile_1'
+  }
+stage ('compile package'){
+  sh.'mvn package'
+  }
 }

@@ -1,0 +1,7 @@
+node 
+  stage ('SCM checkout'){
+  git 'https://github.com/iskandarsaleh/javahello/new/master'
+}
+  stage ('compile-package'){
+  sh 'mvn package'
+}
